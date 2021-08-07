@@ -13,7 +13,7 @@ PASS = ''
 BUFLEN = 8196 * 8
 TIMEOUT = 60
 MSG = 'YAMETE KUDASAI'
-COR = '<font color="blue">'
+COR = '<font color="cyan">'
 FTAG = '</font>'
 DEFAULT_HOST = '0.0.0.0:22'
 RESPONSE = "HTTP/1.1 101 Mario Ozawo\r\nContent-Length: 1048576000000\r\n\r\n"
