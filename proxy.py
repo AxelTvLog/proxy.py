@@ -8,7 +8,7 @@ IP = '0.0.0.0'
 try:
    PORT = int(sys.argv[1])
 except:
-   PORT = 8080
+   PORT = 443
 PASS = ''
 BUFLEN = 8196 * 8
 TIMEOUT = 60
