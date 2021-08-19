@@ -1,18 +1,21 @@
-import socket, threading, thread, select, signal, sys, time, getopt
-
-# Listen
-LISTENING_ADDR = '0.0.0.0'
-if sys.argv[1:]:
-  LISTENING_PORT = sys.argv[1]
-else:
-  LISTENING_PORT = 2082  
-#Pass
+#!/usr/bin/env python3
+# encoding: utf-8
+import socket, threading, thread, select, signal, sys, time
+from os import system
+system("clear")
+#conexao
+IP = '0.0.0.0'
+try:
+   PORT = int(sys.argv[1])
+except:
+   PORT = 8080
 PASS = ''
-
-# CONST
-BUFLEN = 4096 * 4
+BUFLEN = 8196 * 8
 TIMEOUT = 60
-DEFAULT_HOST = '127.0.0.1:1197'
+MSG = 'YAMETE KUDASAI'
+COR = '<font color="cyan">'
+FTAG = '</font>'
+DEFAULT_HOST = '0.0.0.0:22'
 RESPONSE = 'HTTP/1.1 101 SL_CDNOpenVPN_YNTKTS\r\n\r\n''
 #RESPONSE = 'HTTP/1.1 200 Hello_World!\r\nContent-length: 0\r\n\r\nHTTP/1.1 200 Connection established\r\n\r\n'  # lint:ok
 
