@@ -8,15 +8,15 @@ IP = '0.0.0.0'
 try:
    PORT = int(sys.argv[1])
 except:
-   PORT = 443
+   PORT = 8080
 PASS = ''
-BUFLEN = 8196 * 8
+BUFLEN = 4096 * 4
 TIMEOUT = 60
 MSG = 'YAMETE KUDASAI'
 COR = '<font color="cyan">'
 FTAG = '</font>'
 DEFAULT_HOST = '0.0.0.0:22'
-RESPONSE = "HTTP/1.1 101 <font color='cyan'>Mario Ozawo</font>\r\nContent-Length: 1048576000000\r\n\r\n"
+RESPONSE = "<font color='cyan'>HTTP/1.1 101 Mario Ozawo</font>\r\nContent-Length: 1048576000000\r\n\r\n"
  
 class Server(threading.Thread):
     def __init__(self, host, port):
