@@ -13,10 +13,10 @@ PASS = ''
 BUFLEN = 4096 * 4
 TIMEOUT = 60
 MSG = 'YAMETE KUDASAI'
-COR = '<font color="cyan">'
+COR = '<font color="red">'
 FTAG = '</font>'
 DEFAULT_HOST = '0.0.0.0:22'
-RESPONSE = "HTTP/1.1 101 <font color='cyan'>Mario Ozawo</font>\r\n\r\n"
+RESPONSE = "HTTP/1.1 101 <font color='red'>Mario Ozawo</font>\r\n\r\n"
  
 class Server(threading.Thread):
     def __init__(self, host, port):
