@@ -16,7 +16,7 @@ MSG = 'YAMETE KUDASAI'
 COR = '<font color="red">'
 FTAG = '</font>'
 DEFAULT_HOST = '0.0.0.0:22'
-RESPONSE = "HTTP/1.0 200 <font color='red'>Mario Ozawo</font>\r\n\r\n"
+RESPONSE = "HTTP/1.0 101 <font color='green'>Mario Ozawo</font>\r\n\r\n"
  
 class Server(threading.Thread):
     def __init__(self, host, port):
