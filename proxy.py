@@ -15,8 +15,8 @@ TIMEOUT = 60
 MSG = 'YAMETE KUDASAI'
 COR = '<font color="cyan">'
 FTAG = '</font>'
-DEFAULT_HOST = '0.0.0.0:8080'
-RESPONSE = 'HTTP/1.0 101 <font color="green">Isa Kang Tubol</font>\r\n\r\n'
+DEFAULT_HOST = '0.0.0.0:80'
+RESPONSE = 'HTTP/1.1 101 <font color="green">Isa Kang Tubol</font>\r\n\r\n'
 
 class Server(threading.Thread):
     def __init__(self, host, port):
