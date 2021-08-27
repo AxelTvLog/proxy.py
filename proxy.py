@@ -15,9 +15,9 @@ TIMEOUT = 60
 MSG = 'YAMETE KUDASAI'
 COR = '<font color="cyan">'
 FTAG = '</font>'
-DEFAULT_HOST = '0.0.0.0:22'
-RESPONSE = 'HTTP/1.1 101 SL_OSSH_YNTKTS\r\n\r\n'
-RESPONSE = 'HTTP/1.1 200 Hello_World!\r\nContent-length: 0\r\n\r\nHTTP/1.1 200 Connection established\r\n\r\n'  # lint:ok
+DEFAULT_HOST = '127.0.0.1:22'
+RESPONSE = 'HTTP/1.1 101 Isa Kang Tubol\r\n\r\n'
+#RESPONSE = 'HTTP/1.1 200 Hello_World!\r\nContent-length: 0\r\n\r\nHTTP/1.1 200 Connection established\r\n\r\n'  # lint:ok
 
 class Server(threading.Thread):
     def __init__(self, host, port):
