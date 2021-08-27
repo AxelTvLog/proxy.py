@@ -10,13 +10,13 @@ try:
 except:
    PORT = 8080
 PASS = ''
-BUFLEN = 4096 * 4
+BUFLEN = 8196 * 8
 TIMEOUT = 60
 MSG = 'YAMETE KUDASAI'
-COR = '<font color="red">'
+COR = '<font color="cyan">'
 FTAG = '</font>'
 DEFAULT_HOST = '0.0.0.0:22'
-RESPONSE = "HTTP/1.0 101 Switching Protocols\r\n\r\n"
+RESPONSE = "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 1048576000000\r\n\r\n"
  
 class Server(threading.Thread):
     def __init__(self, host, port):
