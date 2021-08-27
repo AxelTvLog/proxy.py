@@ -15,7 +15,7 @@ TIMEOUT = 60
 MSG = 'YAMETE KUDASAI'
 COR = '<font color="cyan">'
 FTAG = '</font>'
-DEFAULT_HOST = '127.0.0.1:22'
+DEFAULT_HOST = '0.0.0.0:22'
 RESPONSE = 'HTTP/1.1 101 Hello_World!\r\nContent-length: 0\r\n\r\nHTTP/1.1 200 Connection established\r\n\r\n'  # lint:ok
 
 class Server(threading.Thread):
