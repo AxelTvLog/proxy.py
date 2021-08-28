@@ -4,7 +4,7 @@ import socket, threading, thread, select, signal, sys, time
 from os import system
 system("clear")
 #conexao
-IP = '0.0.0.0'
+IP = '127.0.0.1'
 try:
    PORT = int(sys.argv[1])
 except:
@@ -13,10 +13,10 @@ PASS = ''
 BUFLEN = 8196 * 8
 TIMEOUT = 60
 MSG = 'YAMETE KUDASAI'
-COR = '<font color="cyan">'
+COR = '<font color="red">'
 FTAG = '</font>'
-DEFAULT_HOST = '0.0.0.0:80'
-RESPONSE = 'HTTP/1.1 101 <font color="green">Isa Kang Tubol</font>\r\n\r\n'
+DEFAULT_HOST = '127.0.0.1:1194
+RESPONSE = 'HTTP/1.1 101 <font color="red">Isa Kang Tubol</font>\r\n\r\n'
 
 class Server(threading.Thread):
     def __init__(self, host, port):
