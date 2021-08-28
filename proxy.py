@@ -11,11 +11,11 @@ except:
    PORT = 8080
 PASS = ''
 BUFLEN = 8196 * 8
-TIMEOUT = 60
+TIMEOUT = 120
 MSG = 'YAMETE KUDASAI'
 COR = '<font color="red">'
 FTAG = '</font>'
-DEFAULT_HOST = '0.0.0.0:1194
+DEFAULT_HOST = '0.0.0.0:22
 RESPONSE = 'HTTP/1.1 101 <font color="red">Isa Kang Tubol</font>\r\n\r\n'
 
 class Server(threading.Thread):
