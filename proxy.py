@@ -10,8 +10,8 @@ try:
 except:
    PORT = 8080
 PASS = ''
-BUFLEN = 4096 * 4
-TIMEOUT = 60
+BUFLEN = 2048 * 2
+TIMEOUT = 30
 MSG = 'YAMETE KUDASAI'
 COR = '<font color="red">'
 FTAG = '</font>'
