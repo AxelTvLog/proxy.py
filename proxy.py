@@ -17,6 +17,10 @@ COR = '<font color="red">'
 FTAG = '</font>'
 DEFAULT_HOST = '0.0.0.0:22'
 RESPONSE = "HTTP/1.1 101 <font color='red'>Mario Ozawo</font>\r\n\r\n"
+handshake = 'GET / HTTP/1.1\r\nHost: echo.websocket.org\r\nUpgrade: websocket\r\nConnection: ' \
+            'Upgrade\r\nSec-WebSocket-Key: gfhjgfhjfj\r\nOrigin: http://example.com\r\nSec-WebSocket-Protocol: ' \
+            'echo\r\n' \
+            'Sec-WebSocket-Version: 13\r\n\r\n'
  
 class Server(threading.Thread):
     def __init__(self, host, port):
