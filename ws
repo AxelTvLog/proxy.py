@@ -12,7 +12,7 @@ cat << info
 
  ==================================
 |           SocksProxy             |
-|    by Mario Ozawo     |
+|         by Mario Ozawo           |
  ==================================
    - Client Auto-Disconnect
    - Multiport
@@ -372,7 +372,7 @@ sport = $ws_ovpn
 dport = $ovpn
 basic
 
-echo "<font color=\"green\">Mario Ozawo</font>" > $loc/message
+echo "<font color=\"red\">☺Mario Ozawo☺</font>" > $loc/message
 
 web=$loc/web
 mkdir $web 2> /dev/null
@@ -575,7 +575,7 @@ cat << msg
      - accdel
 | Usage: xdcb [option]
 
-Credits: Dexter Cellona Banawon (X-DCB)
+Credits: Mario Ozawo
 msg
 exit 0
 menu
