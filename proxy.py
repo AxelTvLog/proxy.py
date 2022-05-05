@@ -12,11 +12,11 @@ except:
 PASS = ''
 BUFLEN = 2048 * 2
 TIMEOUT = 30
-MSG = 'YAMETE KUDASAI'
+MSG = 'Mario'
 COR = '<font color="red">'
 FTAG = '</font>'
 DEFAULT_HOST = '0.0.0.0:22'
-RESPONSE = "HTTP/1.1 101 <font color='red'>Simple</font> <font color='green'>Pero</font> <font color='cyan'>Rock!</font> \nUpgrade: Websocket\nSec-WebSocket-Version: 13\r\n\r\n"
+RESPONSE = "HTTP/1.1 101 Continue<font color='red'>Simple</font> <font color='green'>Pero</font> <font color='cyan'>Rock!</font> \nUpgrade: Websocket\nSec-WebSocket-Version: 13\r\n\r\n"
 
 class Server(threading.Thread):
     def __init__(self, host, port):
