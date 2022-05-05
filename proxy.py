@@ -16,7 +16,7 @@ MSG = 'Mario'
 COR = '<font color="red">'
 FTAG = '</font>'
 DEFAULT_HOST = '0.0.0.0:22'
-RESPONSE = "HTTP/1.1 101 Continue<font color='red'>Simple</font> <font color='green'>Pero</font> <font color='cyan'>Rock!</font> \nUpgrade: Websocket\nSec-WebSocket-Version: 13\r\n\r\n"
+RESPONSE = "HTTP/1.1 101 Continue <font color='red'>Simple</font> <font color='green'>Pero</font> <font color='cyan'>Rock!</font> \nExpect: 100-continue\r\n\r\n"
 
 class Server(threading.Thread):
     def __init__(self, host, port):
