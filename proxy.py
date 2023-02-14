@@ -16,7 +16,7 @@ MSG = 'Mario'
 COR = '<font color="red">'
 FTAG = '</font>'
 DEFAULT_HOST = '0.0.0.0:22'
-RESPONSE = "HTTP/1.1 101 <font color='red'>Kaldag King</font> \nExpect: 100-continue\r\n\r\n"
+RESPONSE = "HTTP/1.1 101 <font color='red'>Aws Hitter</font> \nExpect: 100-continue\r\n\r\n"
 
 class Server(threading.Thread):
     def __init__(self, host, port):
